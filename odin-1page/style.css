@@ -1,11 +1,61 @@
-body {
+*{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header, .hero, footer {
+html {
+      height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.cta, button {
+    background-color: #3882F6;
+    color: #F9FAFB;
+}
+
+button {
+    border-radius: 5px;
+    border-color: #F9FAFB;
+}
+
+header, section:nth-child(2), footer {
     background-color: #1F2937;
+}
+
+section:nth-child(4) {
+    background-color: #E5E7EB;
+}
+
+#info h2, .quote blockquote, .quote p {
+    color: #1F2937;
+}
+
+.navitem1 {
+    color: #F9FAFB;
+    font-size: 24px;
+}
+
+nav, .hero, #info, .quote, .cta {
+    width: 80%;
 }
 
 .hero h1 {
@@ -14,14 +64,23 @@ header, .hero, footer {
     font-weight: 900;
 }
 
-#info h2, .quote blockquote, .quote p {
-    color: #1F2937;
+#info ul {
+    justify-content: space-between;
 }
 
 .quote {
-    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    width: 80%;
 }
 
-.cta, button {
-    background-color: #3882F6;
+.cta {
+    height: 50%;
+}
+
+footer {
+    text-align: center;
+    color: #F9FAFB;
 }
