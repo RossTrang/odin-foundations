@@ -13,3 +13,4 @@ This repo will be pushed to Github Pages rather than publishing each exercise as
 Links to the exercise instructions will be listed here. Visit the hosted github page to view the output.
 
 + [Odin Recipes](https://www.theodinproject.com/lessons/foundations-recipes)
++ [Odin Landing Page](https://www.theodinproject.com/lessons/foundations-landing-page)
