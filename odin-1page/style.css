@@ -14,17 +14,11 @@ html {
     height: 100vh;
 }
 
-section {
+section{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
 }
 
 .cta, button {
@@ -35,6 +29,10 @@ ul {
 button {
     border-radius: 5px;
     border-color: #F9FAFB;
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 header, section:nth-child(2), footer {
@@ -49,14 +47,48 @@ section:nth-child(4) {
     color: #1F2937;
 }
 
-.navitem1 {
-    color: #F9FAFB;
-    font-size: 24px;
-}
-
 nav, .hero, #info, .quote, .cta {
     width: 80%;
 }
+
+.navitem, .heroText p {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+.navitem {
+    margin-right: 20px;
+}
+
+.navitem1 {
+    color: #F9FAFB;
+    font-size: 24px;
+    margin-right: auto;
+}    
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .hero h1 {
     font-size: 48px;
@@ -64,8 +96,24 @@ nav, .hero, #info, .quote, .cta {
     font-weight: 900;
 }
 
+.hero img {
+    width: 50%;
+    height: 100%;
+}
+
 #info ul {
     justify-content: space-between;
+}
+
+.infocard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+}
+.infoimg {
+    border-radius: 15px;
 }
 
 .quote {
@@ -73,7 +121,6 @@ nav, .hero, #info, .quote, .cta {
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
-    width: 80%;
 }
 
 .cta {
